@@ -10,6 +10,12 @@ Feito isso o Docker começa a criar os containeres na ordem e inicializá-los. E
 O output desse comando exibe todos os containeres que estão em execução, adiciona a flag -a para ver todos os containeres que existe na sua máquina.
 Foi adicionado a flag -d para que nosso terminal seja liberado após a conclusão desse comando.
 
+# Aplicativos utilizados no projeto
+
+* Postman;
+* Docker;
+* Docker compose.
+
 # Newman, Docker e Docker Compose
 O Newman é um executor de coleta de linha de comando para o Postman. Ele permite que você execute e teste de  Collections diretamente da linha de comando.<br>
 O Docker agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containeres.<br>
@@ -73,7 +79,7 @@ Na versão 3.x esse comportamento mudou, de modo que cada arquivo docker-compose
 
 # Explicando o arquivo docker-compose.yml
 
-* version: exibe a versão do docker-compose
+* version: exibe a versão do docker-compose.
 * services: declara 3 contêineres (app, nginx e postgres). Cada serviço é um bloco independente com as próprias declarações.
 * app: bloco de serviço.
 * image: utiliza uma imagem pronta, fornecida pelo Docker Hub que já possui essas tecnologias prontas para uso.
@@ -86,12 +92,6 @@ nginx: bloco de serviço.
 * ports: porta que a aplicação irá escutar.
 postgres: bloco de serviço.
 * environment: adiciona env variables ao seu container. As três variáveis que adicionamos servem para o Postgres configurar um banco de dados, usuário e senha.
-
-# Aplicativos necessários
-
-* Postman
-* Docker
-* Docker compose
 
 # Dicas úteis
 
