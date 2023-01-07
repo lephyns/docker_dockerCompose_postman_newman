@@ -46,8 +46,8 @@ Após executado será exibido todos os containers que estão em execução e com
 ![gif](./img/rodando-containeres-docker.gif "Rondando containeres docker")
 
 ### Vale lembrar! 💡
-Quando criamos contêineres utilizando o docker-compose, além dos contêineres, outras entidades são criadas. Uma das mais importantes é a Network.
-Na versão 2.x todos os containers de todos os arquivos `docker-compose.yml` que eram criados se juntavam em uma mesma network com nome default.
+Quando criamos contêineres utilizando o docker-compose, além dos contêineres, outras entidades são criadas. Uma das mais importantes é a Network.<br>
+Na versão 2.x todos os containers de todos os arquivos `docker-compose.yml` que eram criados se juntavam em uma mesma network com nome default.<br>
 Na versão 3.x esse comportamento mudou, de modo que cada arquivo docker-compose.yml tem sua própria network. O docker-compose nomeia a network do arquivo docker-compose.yml utilizando o nome do diretório concatenado com a string _default. Portanto na versão 3.x do docker-compose a network é definida por arquivos `docker-compose.yml` e um container de fora desse arquivo, por padrão, não se comunica com os que estão definidos nele.
 
 # Explicando o arquivo docker-compose.yml 👨‍💻
