@@ -107,9 +107,6 @@ No terminal, rodar o comando abaixo:
 
 `$ docker run -t postman/newman_ubuntu1404 run "<Seu Via JSON Link da coleção aqui>"`
 
-Exemplo de como ficou o meu:
-`$ docker run -t postman/newman_ubuntu1404 run "https://api.postman.com/collections/24641452-734ee9f4-3e94-40fd-a64b-ddf7fa88e3a6?access_key=PMAT-01GP4GH6BFFHP3798GA9TGM99Y"`
-
 Após o comando ser finalizado será exibido o relatório de testes do newman:
 
 ![img](./img/relatorio-de-testes-do-newman.png "Relatório de testes do newman")
