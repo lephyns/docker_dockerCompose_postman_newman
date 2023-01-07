@@ -1,4 +1,4 @@
-# O projeto
+# O projeto 📚
 
 Projeto criado para exercitar a criação de containeres com o Docker e Docker Compose. Foi definido 3 containeres diferentes para que cada tecnologia (Phoenix, Nginx e Postgres) tenha seu próprio ambiente e sejam capazes de conversar entre si através do arquivo `docker-compose.yml`.<br>
 Para colocar os containeres para rodar basta digitar o comando abaixo no terminal:
@@ -9,19 +9,19 @@ O Docker irá validar o arquivo `docker-compose.yml` e irá começar a procurar 
 O output desse comando exibe todos os containeres que estão em execução e como foi adicionado a flag -a será exibido todos os containeres que existem na sua máquina.
 Também foi adicionado a flag -d para que o terminal seja liberado após a conclusão desse comando.
 
-# Aplicativos utilizados no projeto
+# Aplicativos utilizados no projeto ⚙️
 
 * Postman;
 * Docker;
 * Docker compose.
 
-# Newman, Docker e Docker Compose
+# Newman, Docker e Docker Compose 📰
 
 O **Newman** é um executor de coleta de linha de comando para o Postman. Ele permite que você execute e teste de  Collections diretamente da linha de comando.<br>
 O **Docker** agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containeres.<br>
 O **Docker Compose** é o orquestrador de containeres da Docker (através do arquivo chamado docker-compose.yml). O arquivo docker-compose.yml é onde declaramos nossas instruções e o estado que cada container deve ser criado e operado bem como a comunicação entre eles. Em poucas paravras o Docker Compose é uma ferramenta para gerenciar containeres que tenham algum tipo de dependência entre si. Nós declaramos esses containeres e seus parâmetros em um arquivo chamado docker-compose.yml.
 
-# Passos para criar o arquivo docker-compose e rodar os containeres
+# Passos para criar o arquivo docker-compose e rodar os containeres 📝
 
 **Passo 1:** criar arquivo `docker-compose.yml` para definir 3 containeres diferentes para que cada tecnologia tenha seu próprio ambiente e sejam capazes de conversar entre si
 O arquivo criado irá buildar:
@@ -38,12 +38,12 @@ Após executado será exibido todos os containers que estão em execução e com
 
 ![gif](./img/rodando-containeres-docker.gif "Rondando containeres docker")
 
-### Vale lembrar!
+### Vale lembrar! 💡
 Quando criamos contêineres utilizando o docker-compose, além dos contêineres, outras entidades são criadas. Uma das mais importantes é a Network.
 Na versão 2.x todos os containers de todos os arquivos `docker-compose.yml` que eram criados se juntavam em uma mesma network com nome default.
 Na versão 3.x esse comportamento mudou, de modo que cada arquivo docker-compose.yml tem sua própria network. O docker-compose nomeia a network do arquivo docker-compose.yml utilizando o nome do diretório concatenado com a string _default. Portanto na versão 3.x do docker-compose a network é definida por arquivos `docker-compose.yml` e um container de fora desse arquivo, por padrão, não se comunica com os que estão definidos nele.
 
-# Explicando o arquivo docker-compose.yml
+# Explicando o arquivo docker-compose.yml 👨‍💻
 
 * **version:** exibe a versão do docker-compose.
 * **services:** declara 3 contêineres (app, nginx e postgres). Cada serviço é um bloco independente com as próprias declarações.
@@ -59,14 +59,14 @@ Na versão 3.x esse comportamento mudou, de modo que cada arquivo docker-compose
 * **postgres:** bloco de serviço.
 * **environment:** adiciona env variables ao seu container. As três variáveis que adicionamos servem para o Postgres configurar um banco de dados, usuário e senha.
 
-# Dicas úteis
+# Dicas úteis 💡
 
 Pré-requisitos do docker compose:
 
 * Docker Compose requer o Docker Engine;
 * O plug-in do Docker Compose requer o Docker CLI.
 
-# Comandos mais corriqueiros do Docker Compose:
+# Comandos mais corriqueiros do Docker Compose 🔖 
 
 * Parando todos os contêineres:<br>
     `$ docker-compose stop`
@@ -80,7 +80,7 @@ Pré-requisitos do docker compose:
 * Construir os contêineres sem inicializá-los:<br>
     `$ docker-compose build`
 
-# Passos para rodar os testes de uma coleção do Postman gerando o relatório do Newman pelo Docker
+# Passos para rodar os testes de uma coleção do Postman gerando o relatório do Newman pelo Docker 📝
 
 **Passo 1:** copiar link de compartilhamento dos testes de uma coleção no Postman.
 
