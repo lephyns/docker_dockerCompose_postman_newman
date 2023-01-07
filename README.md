@@ -1,14 +1,13 @@
 # O projeto
 
-Projeto criado para definir 3 containeres diferentes para que cada tecnologia tenha seu próprio ambiente e sejam capazes de conversar entre si através do arquivo `docker-compose.yml`.
+Projeto criado para exercitar a criação de containeres com o Docker e Docker Compose. Foi definido 3 containeres diferentes para que cada tecnologia (Phoenix, Nginx e Postgres) tenha seu próprio ambiente e sejam capazes de conversar entre si através do arquivo `docker-compose.yml`.<br>
 Para colocar os containeres para rodar basta digitar o comando abaixo no terminal:
 
 `$ docker-compose up -d`
 
-O Docker irá validar nosso arquivo `docker-compose.yml` e irá começar a procurar as imagens que nossos containeres precisam para serem executados. 
-Feito isso o Docker começa a criar os containeres na ordem e inicializá-los. E se tudo correu bem você pode listar os containeres criados com docker 
-O output desse comando exibe todos os containeres que estão em execução, adiciona a flag -a para ver todos os containeres que existe na sua máquina.
-Foi adicionado a flag -d para que nosso terminal seja liberado após a conclusão desse comando.
+O Docker irá validar o arquivo `docker-compose.yml` e irá começar a procurar as imagens que os containeres precisam para serem executados. Depois o Docker começará a criar os containeres na ordem e inicializá-los e listará os containeres que foram criados com o Docker.<br>
+O output desse comando exibe todos os containeres que estão em execução e como foi adicionado a flag -a será exibido todos os containeres que existem na sua máquina.
+Também foi adicionado a flag -d para que o terminal seja liberado após a conclusão desse comando.
 
 # Aplicativos utilizados no projeto
 
@@ -17,11 +16,12 @@ Foi adicionado a flag -d para que nosso terminal seja liberado após a conclusã
 * Docker compose.
 
 # Newman, Docker e Docker Compose
-O Newman é um executor de coleta de linha de comando para o Postman. Ele permite que você execute e teste de  Collections diretamente da linha de comando.<br>
-O Docker agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containeres.<br>
-O Docker Compose é o orquestrador de containeres da Docker (através do arquivo chamado docker-compose.yml). O arquivo docker-compose.yml é onde declaramos nossas instruções e o estado que cada container deve ser criado e operado bem como a comunicação entre eles. O Docker Compose é uma ferramenta para gerenciar containeres que tenham algum tipo de dependência entre si. Nós declaramos esses containeres e seus parâmetros em um arquivo chamado docker-compose.yml.
 
-# Passos
+O **Newman** é um executor de coleta de linha de comando para o Postman. Ele permite que você execute e teste de  Collections diretamente da linha de comando.<br>
+O **Docker** agrupa partes de softwares de um sistema de arquivo completo e que abrange todos os recursos necessários para a sua execução. Por isso, é uma plataforma de containeres.<br>
+O **Docker Compose** é o orquestrador de containeres da Docker (através do arquivo chamado docker-compose.yml). O arquivo docker-compose.yml é onde declaramos nossas instruções e o estado que cada container deve ser criado e operado bem como a comunicação entre eles. Em poucas paravras o Docker Compose é uma ferramenta para gerenciar containeres que tenham algum tipo de dependência entre si. Nós declaramos esses containeres e seus parâmetros em um arquivo chamado docker-compose.yml.
+
+# Passos:
 
 **Passo 1:** copiar link de compartilhamento dos testes de uma coleção no Postman.
 
@@ -43,7 +43,7 @@ Após o processo ser finalizado a imagem do postman/newman irá ser exibida no D
 
 ![img](./img/imagem-postman-newman-baixada.png "Imagem postman/newman no Docker")
 
-**Passo 4:** executar comandos newman na imagem
+**Passo 4:** executar comandos newman na imagem baixada
 No terminal, rodar o comando abaixo:
 
 `$ docker run -t postman/newman_ubuntu1404 run "<Seu Via JSON Link da coleção aqui>"`
