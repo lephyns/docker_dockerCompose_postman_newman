@@ -3,7 +3,7 @@
 Projeto criado para definir 3 containeres diferentes para que cada tecnologia tenha seu próprio ambiente e sejam capazes de conversar entre si através do arquivo `docker-compose.yml`.
 Para colocar os containeres para rodar basta digitar o comando abaixo no terminal:
 
-`docker-compose up -d`
+`$ docker-compose up -d`
 
 O Docker irá validar nosso arquivo `docker-compose.yml` e irá começar a procurar as imagens que nossos containeres precisam para serem executados. 
 Feito isso o Docker começa a criar os containeres na ordem e inicializá-los. E se tudo correu bem você pode listar os containeres criados com docker 
@@ -29,7 +29,7 @@ O Docker Compose é o orquestrador de containeres da Docker (através do arquivo
 
 **Passo 2:** abrir o docker porque ele precisa estar em execução para seguir para as proximas etapas. Para saber se o docker está instalado corretamente basta executar o comando no terminal:
 
-`docker run hello-world`
+`$ docker run hello-world`
 
 A mensagem abaixo deverá ser exibida no terminal:
 ![img](./img/confirmacao-docker-instalado.png "Mensagem de confirmação docker instalado")
@@ -37,7 +37,7 @@ A mensagem abaixo deverá ser exibida no terminal:
 **Passo 3:** configurar container do Docker
 No terminal, rodar o comando abaixo que irá puxar a imagem do docker newman do hub do docker:
 
-`docker pull postman/newman_ubuntu1404`
+`$ docker pull postman/newman_ubuntu1404`
 
 Após o processo ser finalizado a imagem do postman/newman irá ser exibida no Docker:
 
@@ -46,10 +46,10 @@ Após o processo ser finalizado a imagem do postman/newman irá ser exibida no D
 **Passo 4:** executar comandos newman na imagem
 No terminal, rodar o comando abaixo:
 
-`docker run -t postman/newman_ubuntu1404 run "<Seu Via JSON Link da coleção aqui>"`
+`$ docker run -t postman/newman_ubuntu1404 run "<Seu Via JSON Link da coleção aqui>"`
 
 Exemplo de como ficou o meu:
-`docker run -t postman/newman_ubuntu1404 run "https://api.postman.com/collections/24641452-734ee9f4-3e94-40fd-a64b-ddf7fa88e3a6?access_key=PMAT-01GP4GH6BFFHP3798GA9TGM99Y"`
+`$ docker run -t postman/newman_ubuntu1404 run "https://api.postman.com/collections/24641452-734ee9f4-3e94-40fd-a64b-ddf7fa88e3a6?access_key=PMAT-01GP4GH6BFFHP3798GA9TGM99Y"`
 
 Após o comando ser finalizado será exibido o relatório de testes do newman:
 
@@ -64,7 +64,7 @@ O arquivo criado irá buildar:
 **Passo 6:** rodar os containeres
 O comando abaixo coloca todos os 3 containers para rodar:
 
-`docker-compose up -d`
+`$ docker-compose up -d`
 
 Após executado será exibido todos os containers que estão em execução e como adicionamos a flag -a será exibido todos os containers que existem na sua máquina:
 
@@ -103,13 +103,13 @@ Pré-requisitos do docker compose:
 # Comandos mais corriqueiros do Docker Compose:
 
 * Parando todos os contêineres:<br>
-    `docker-compose stop`
+    `$ docker-compose stop`
 
 * Removendo todos os contêineres:<br>
-    `docker-compose rm -f`
+    `$ docker-compose rm -f`
 
 * Vendo o log de todos os contêineres:<br>
-    `docker-compose logs -f`
+    `$ docker-compose logs -f`
 
 * Construir os contêineres sem inicializá-los:<br>
-    `docker-compose build`
+    `$ docker-compose build`
