@@ -102,15 +102,14 @@ Pré-requisitos do docker compose:
 
 # Comandos mais corriqueiros do Docker Compose:
 
-Parando todos os contêineres:
+* Parando todos os contêineres:<br>
+    `docker-compose stop`
 
-`docker-compose stop`
-Removendo todos os contêineres:
+* Removendo todos os contêineres:<br>
+    `docker-compose rm -f`
 
-`docker-compose rm -f`
-Vendo o log de todos os contêineres:
+* Vendo o log de todos os contêineres:<br>
+    `docker-compose logs -f`
 
-`docker-compose logs -f`
-Construir os contêineres sem inicializá-los:
-
-`docker-compose build`
+* Construir os contêineres sem inicializá-los:<br>
+    `docker-compose build`
