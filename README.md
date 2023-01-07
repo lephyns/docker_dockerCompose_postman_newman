@@ -79,19 +79,19 @@ Na versão 3.x esse comportamento mudou, de modo que cada arquivo docker-compose
 
 # Explicando o arquivo docker-compose.yml
 
-* version: exibe a versão do docker-compose.
-* services: declara 3 contêineres (app, nginx e postgres). Cada serviço é um bloco independente com as próprias declarações.
-* app: bloco de serviço.
-* image: utiliza uma imagem pronta, fornecida pelo Docker Hub que já possui essas tecnologias prontas para uso.
-* container_name: apenas para definir o nome do container.
-* volumes: essa declaração faz uma "ligação" com o diretório da sua máquina (host) com o diretório do container. Então, nós estamos "ligando" o diretório em que o docker-compose.yml está `./` com o diretório `/var/www/application/` dentro do container. Dessa forma todos os arquivos que tem em um diretório aparecerá no outro.
-* working_dir: define que o path que passamos à ela, `/var/www/application/` seja o diretório padrão onde os comandos serão executados.
-* expose: expõe a porta 4000 do container para que ela receba tráfego.
-* tty: faz com que o container fique em execução em segundo plano mesmo se nenhum comando for executado.
-nginx: bloco de serviço.
-* ports: porta que a aplicação irá escutar.
-postgres: bloco de serviço.
-* environment: adiciona env variables ao seu container. As três variáveis que adicionamos servem para o Postgres configurar um banco de dados, usuário e senha.
+* **version:** exibe a versão do docker-compose.
+* **services:** declara 3 contêineres (app, nginx e postgres). Cada serviço é um bloco independente com as próprias declarações.
+* **app:** bloco de serviço.
+* **image:** utiliza uma imagem pronta, fornecida pelo Docker Hub que já possui essas tecnologias prontas para uso.
+* **container_name:** apenas para definir o nome do container.
+* **volumes:** essa declaração faz uma "ligação" com o diretório da sua máquina (host) com o diretório do container. Então, nós estamos "ligando" o diretório em que o docker-compose.yml está `./` com o diretório `/var/www/application/` dentro do container. Dessa forma todos os arquivos que tem em um diretório aparecerá no outro.
+* **working_dir:** define que o path que passamos à ela, `/var/www/application/` seja o diretório padrão onde os comandos serão executados.
+* **expose:** expõe a porta 4000 do container para que ela receba tráfego.
+* **tty:** faz com que o container fique em execução em segundo plano mesmo se nenhum comando for executado.
+* **nginx:** bloco de serviço.
+* **ports:** porta que a aplicação irá escutar.
+* **postgres:** bloco de serviço.
+* **environment:** adiciona env variables ao seu container. As três variáveis que adicionamos servem para o Postgres configurar um banco de dados, usuário e senha.
 
 # Dicas úteis
 
