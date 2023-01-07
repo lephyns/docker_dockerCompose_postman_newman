@@ -15,6 +15,13 @@ Também foi adicionado a flag -d para que o terminal seja liberado após a concl
 * Docker;
 * Docker compose.
 
+# Dicas úteis 💡
+
+Pré-requisitos do docker compose:
+
+* Docker Compose requer o Docker Engine;
+* O plug-in do Docker Compose requer o Docker CLI.
+
 # Newman, Docker e Docker Compose 📰
 
 O **Newman** é um executor de coleta de linha de comando para o Postman. Ele permite que você execute e teste de  Collections diretamente da linha de comando.<br>
@@ -58,13 +65,6 @@ Na versão 3.x esse comportamento mudou, de modo que cada arquivo docker-compose
 * **ports:** porta que a aplicação irá escutar.
 * **postgres:** bloco de serviço.
 * **environment:** adiciona env variables ao seu container. As três variáveis que adicionamos servem para o Postgres configurar um banco de dados, usuário e senha.
-
-# Dicas úteis 💡
-
-Pré-requisitos do docker compose:
-
-* Docker Compose requer o Docker Engine;
-* O plug-in do Docker Compose requer o Docker CLI.
 
 # Comandos mais corriqueiros do Docker Compose 🔖 
 
