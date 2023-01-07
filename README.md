@@ -30,7 +30,7 @@ O **Docker Compose** é o orquestrador de containeres da Docker (através do arq
 
 # Passos para criar o arquivo docker-compose e rodar os containeres 📝
 
-**Passo 1:** criar arquivo `docker-compose.yml` para definir 3 containeres diferentes para que cada tecnologia tenha seu próprio ambiente e sejam capazes de conversar entre si
+**Passo 1:** criar arquivo `docker-compose.yml` para definir 3 containeres diferentes para que cada tecnologia tenha seu próprio ambiente e sejam capazes de conversar entre si.<br>
 O arquivo criado irá buildar:
 * Phoenix (um web framework feito com Elixir);
 * Um servidor web Nginx e;
